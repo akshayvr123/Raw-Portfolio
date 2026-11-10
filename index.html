@@ -149,6 +149,13 @@ dialog[open]{display:flex;flex-direction:column;align-items:center;justify-conte
 footer{padding:28px 0;color:var(--mute);font-size:13px}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 
+/* social links */
+footer .soc{justify-content:center;gap:12px 36px;padding-bottom:24px;letter-spacing:.14em;text-transform:uppercase}
+footer .soc a{position:relative;transition:color .3s}
+footer .soc a:hover{color:var(--ink)}
+footer .soc a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--blue);transform:scaleX(0);transform-origin:right;transition:transform .4s}
+footer .soc a:hover::after{transform:scaleX(1);transform-origin:left}
+
 @media(prefers-reduced-motion:reduce){#pre{display:none}.line>span{transform:none;transition:none}.sub{opacity:1}.mq,.ph,.scroll i{animation:none}#sp span{opacity:1}html{scroll-behavior:auto}}
 </style>
 </head>
@@ -201,12 +208,20 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 
 <section class="cta" id="contact"><div class="wrap">
   <h2>Let’s film your<br><em>next launch.</em></h2>
-  <a class="mag" href="mailto:hello@raw20.studio">hello@raw20.studio</a>
+  <a class="mag" href="mailto:hello@raw20.studio">rawstudioae@gmail.com</a>
 </div></section>
 </main>
 
 <div class="wm" aria-hidden="true">RAW 2.0</div>
-<footer><div class="wrap"><span>© 2026 RAW 2.0 AI Film Studio</span><span>Our experience. Your next chapter.</span></div></footer>
+<footer>
+  <div class="wrap soc">
+    <a href="https://www.instagram.com/rawstudioae?psln=MW1jc2E4YXh6YnFqNg%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="RAW 2.0 on Instagram">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=61555446677651&amp;mibextid=wwXIfr&amp;rdid=fmlziOPkcgHfetvk&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19ZUzwRiDj%2F%3Fmibextid%3DwwXIfr#" target="_blank" rel="noopener noreferrer" aria-label="RAW 2.0 on Facebook">Facebook</a>
+    <a href="https://www.linkedin.com/company/raw-2-0/home/?viewAsMember=true" target="_blank" rel="noopener noreferrer" aria-label="RAW 2.0 on LinkedIn">LinkedIn</a>
+    <a href="https://www.youtube.com/@rawstudio12" target="_blank" rel="noopener noreferrer" aria-label="RAW 2.0 on YouTube">YouTube</a>
+  </div>
+  <div class="wrap"><span>© 2026 RAW 2.0 AI Film Studio</span><span>Our experience. Your next chapter.</span></div>
+</footer>
 
 <dialog id="dlg" aria-label="Work viewer">
   <button class="close" id="x">CLOSE</button>
@@ -224,7 +239,7 @@ var WORKS=[
  {t:"Selhaya - Cinematic Fashion Film",c:"Fashion",o:"l",src:"https://youtu.be/1o3xmpNZL5Q?si=FxCp6uxFyNhgXwrQ",g:"linear-gradient(135deg,#0a3fbf,#05060a 55%,#1a6bff)"},
  {t:"Luxury Brand Commercial",c:"Fragrance",o:"l",src:"https://youtu.be/weMV-ywDfcM?si=ux7H0Lcc-MPzmEcU",g:"linear-gradient(135deg,#6b4a1a,#05060a 55%,#c59a3b)"},
  {t:"UAE national day Campaign",c:"Fashion",o:"l",src:"https://youtu.be/bTqEdnKG5ec?si=U7FsB_mvhH8AINlO",g:"linear-gradient(135deg,#a8742c,#1a1206 55%,#e0b26a)"},
- {t:"UAE national day Campaign",c:"Fashion",o:"l",src:"https://youtu.be/CYkeRMYmpGY?si=SvlpCgXGDvu3fUSW",g:"linear-gradient(135deg,#a8742c,#1a1206 55%,#e0b26a)"},
+ {t:"Paris Corner - cinematic brand advertisement",c:"Fashion",o:"l",src:"https://youtu.be/CYkeRMYmpGY?si=SvlpCgXGDvu3fUSW",g:"linear-gradient(135deg,#a8742c,#1a1206 55%,#e0b26a)"},
  {t:"Luxury fragrance - AI commercial film",c:"Fragrance",o:"l",src:"https://youtu.be/SPISjolxdnY?si=03VMxDqCLD1iczYK",g:"linear-gradient(135deg,#3f86b8,#05060a 55%,#9fd0ee)"},
  {t:"Tornado - AI commercial film",c:"Watch",o:"l",src:"https://youtu.be/bf7GO4_p-B4?si=PpHY4NlJE_QECDDt",g:"linear-gradient(135deg,#3f86b8,#05060a 55%,#9fd0ee)"},
  {t:"Ai crafted luxury fragrance",c:"Fragrance",o:"l",src:"https://youtu.be/54NnP4Ly0NI?si=YCkCwwot5uNajQJY",g:"linear-gradient(135deg,#3f86b8,#05060a 55%,#9fd0ee)"},
